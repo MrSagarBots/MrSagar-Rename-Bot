@@ -3,7 +3,7 @@
 </h2>
 
 
-![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Rename+Bot+!;Created+By+MrSagarBots!;A+Advance+Bot+Wirh+Cool+Features!)
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Rename+Bot+!;Created+By+MrSagarBots!;A+Advance+Bot+With+Cool+Features!)
 </p>
 
  ━━━━━━━━━━━━━━━━━
