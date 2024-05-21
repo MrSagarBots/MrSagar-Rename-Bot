@@ -5,10 +5,10 @@ from helper.database import *
 @Client.on_message(filters.private & filters.command('set_caption'))
 async def add_caption(client, message):
     if len(message.command) == 1:
-       return await message.reply_text("**ɢɪᴠᴇ  ᴍᴇ  ᴀ  ᴄᴀᴘᴛɪᴏɴ  ᴛᴏ  ꜱᴇᴛ.\n\n𝐄𝐱𝐚𝐦𝐩𝐥𝐞 - `/set_caption File Name`**")
+       return await message.reply_text("**ɢɪᴠᴇ  ᴍᴇ  ᴀ  ᴄᴀᴘᴛɪᴏɴ  ᴛᴏ  ꜱᴇᴛ.\n\n𝐄𝐱𝐚𝐦𝐩𝐥𝐞 - `/set_caption 📕Name ➠ : {filename}\n\n🔗 Size ➠ : {filesize}\n\n⏰ Duration ➠ : {duration}`**")
     caption = message.text.split(" ", 1)[1]
     addcaption(int(message.chat.id), caption)
-    await message.reply_text("**ʏᴏᴜʀ  ᴄᴀᴘᴛɪᴏɴ  ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ  ᴀᴅᴅᴇᴅ.**")
+    await message.reply_text("**ʏᴏᴜʀ  ᴄᴀᴘᴛɪᴏɴ  ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ  ᴀᴅᴅᴇᴅ ✅**")
 
 @Client.on_message(filters.private & filters.command('del_caption'))
 async def delete_caption(client, message): 
@@ -17,7 +17,7 @@ async def delete_caption(client, message):
         await message.reply_text("**ʏᴏᴜ  ᴅᴏɴ'ᴛ  ʜᴀᴠᴇ  ᴀɴʏ  ᴄᴜꜱᴛᴏᴍ  ᴄᴀᴘᴛɪᴏɴ.**")
         return
     delcaption(int(message.chat.id))
-    await message.reply_text("**ʏᴏᴜʀ  ᴄᴀᴘᴛɪᴏɴ  ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ  ᴅᴇʟᴇᴛᴇᴅ.**")
+    await message.reply_text("**ʏᴏᴜʀ  ᴄᴀᴘᴛɪᴏɴ  ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ  ᴅᴇʟᴇᴛᴇᴅ ❌**")
                                        
 @Client.on_message(filters.private & filters.command('see_caption'))
 async def see_caption(client, message): 
